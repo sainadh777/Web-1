@@ -1,0 +1,23 @@
+table, th, tr, td {
+    border: 1px solid black;
+    text-align:center;
+	height:80%;
+}
+
+th {
+    font: bold;
+}
+
+img{
+height: 100px;
+width:100px;
+}
+
+a{
+    position:absolute;
+    right:50%;
+    top:1%;
+    font-size:xx-large;
+    color:darkgreen;
+    
+}

@@ -1,0 +1,301 @@
+html, body {
+    margin: 0;
+}
+
+h2 {
+   text-align: center;
+   color:blue;
+   font-family:
+   font-size:35px;
+}
+
+div#tabs-1 {
+    height: 100%;
+    background-color:aliceblue;
+    background-repeat:repeat;
+    border: 1px solid #009;
+    padding: 5px;
+    text-align:justify;
+}
+
+div#tabs-2 {
+    height: 100%;
+    background: #FFD;
+    background-repeat:repeat;
+    border: 1px solid #009;
+    padding: 5px;
+}
+
+div#tabs-3 {
+    height: 100%;
+    background: #FDD;
+    background-repeat:repeat;
+    border: 1px solid #009;
+    padding: 5px;
+}
+
+.ui-tabs-hide {
+    display: none;
+}
+
+div#tabs {
+    margin: 0 40px 0 40px;
+    height: 900px;
+    min-width: 500px;
+   
+}
+
+    div#tabs ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 27px;
+        border-bottom: 1px solid #000;
+    }
+
+        div#tabs ul li {
+            float: left;
+            height: 25px;
+            padding: 4px 10px 0 10px;
+            margin-right: 5px;
+            border: 1px solid #ABC;
+            border-bottom: none;
+            position: relative;
+            background-color:dimgrey;
+          
+        }
+
+            div#tabs ul li a {
+                text-decoration: none;
+                color: white;
+                font-size:x-large;
+            }
+
+#newproductform #editform {
+    
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    text-align:center;
+}
+
+
+input[type=text] {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    font-size: large;
+    border-radius: 10px 10px;
+}
+
+input[type=text]:readOnly {
+    cursor:not-allowed;
+    background-color:whitesmoke;
+}
+
+
+
+#clearbutton {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    cursor: pointer;
+    color: white;
+    top: 850px;
+    left: 250px;
+}
+
+#submitbutton {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    color: white;
+    top: 850px;
+    left: 380px;
+    background-color: darkgray;
+    cursor: not-allowed;
+}
+
+#editclearbutton{
+
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    cursor: pointer;
+    color: white;
+    top: 900px;
+    left: 250px;
+}
+
+#editsubmitbutton {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    color: white;
+    top: 900px;
+    left: 380px;
+    background-color: darkgray;
+    cursor: not-allowed;
+}
+
+    #submitbutton:enabled, #editsubmitbutton:enabled {
+        background-color: #3b88d8;
+        cursor: pointer;
+    }
+
+    #submitbutton:disabled, #editsubmitbutton:disabled {
+        background-color: darkgray;
+        cursor: not-allowed;
+    }
+
+#validateButton {
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    vertical-align: middle;
+    font: bold;
+    font-size: x-large;
+    color:black;
+}
+
+#logout a {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    width: 40px;
+    height: 20px;
+    font-size:x-large;
+    color:black;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-size: x-large;
+    border-radius: 10px 10px;
+    vertical-align: middle;
+    resize: horizontal;
+}
+
+input[type=file] {
+    width: 300px;
+    font-size: large;
+}
+
+
+#skustatus, #editskustatus{
+    color: red;
+    display: none;
+    font-size: large;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    font-size: large;
+}
+
+
+input[type="search"] {
+	height: 27px;
+    font-size: 20px; 
+    width: 200px;
+	right:10px;
+    
+}
+
+#searchButton, #deleteSearchButton {
+    
+    width: 90px;
+    height: 27px;
+    font-size: 20px;
+    border-radius: 10px 10px;
+    color: white;
+    background-color: forestgreen;
+    cursor: pointer;
+	left:50px;
+}
+
+#searchLabel {
+    font-size: 20px;
+}
+
+#searchSpan, #deleteSearchSpan {
+   position:absolute;
+   left:50%;
+   top:18%;
+}
+
+#noSearchResults, #noDeleteSearchResults {
+    font-size: 15px;
+    color: red;   
+}
+
+
+table#searchResults, table#deleteSearchResults {
+    position:absolute;
+	width:100px;
+    top:50%;
+	right:46%;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+    font-size:small;
+}
+
+th {
+    font: bold;
+}
+
+#editImage{
+max-height:100px;
+max-width:100px;
+
+}
+
+
+.editButton{
+    width: 60px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px 5px;
+    background-color:darkcyan;
+    color:white;
+    cursor:pointer;
+}
+
+.deleteButton{
+
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px 5px;
+    background-color:darkcyan;
+    color:white;
+    cursor:pointer;
+}

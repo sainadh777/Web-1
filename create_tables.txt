@@ -1,0 +1,57 @@
+use jadrn052;
+
+drop table if exists product;
+drop table if exists vendor;
+drop table if exists category;
+
+create table vendor(
+    id  int NOT NULL AUTO_INCREMENT,
+    name    varchar(20) NOT NULL,
+    primary key(id));
+
+create table category(
+    id  int NOT NULL AUTO_INCREMENT,
+    name    varchar(20) NOT NULL,
+    primary key(id));
+
+create table product (
+    sku     char(7)     NOT NULL,
+    catID   int,
+    venID   int,
+    vendorModel     varchar(50),
+    description     varchar(1024),
+    features        varchar(512),
+    cost            decimal(10,2),
+    retail          decimal(10,2),
+    quantity	    int,
+    image           char(12),
+    primary key(sku),
+    foreign key(catID) references category(id),
+    foreign key(venID) references vendor(id));
+## Insert fixed data
+
+INSERT INTO category (name)  VALUES('DSLR');
+INSERT INTO category (name)  VALUES('Point and Shoot');
+INSERT INTO category (name)  VALUES('Advanced Amateur');
+INSERT INTO category (name)  VALUES('Underwater');
+INSERT INTO category (name)  VALUES('Film');
+INSERT INTO category (name)  VALUES('mirrorless');
+INSERT INTO category (name)  VALUES('superzoom');
+
+INSERT INTO vendor (name)  VALUES('Nikon');	
+INSERT INTO vendor (name)  VALUES('Canon'); 
+INSERT INTO vendor (name)  VALUES('Olympus');
+INSERT INTO vendor (name)  VALUES('Lumix'); 
+INSERT INTO vendor (name)  VALUES('Pentax'); 
+INSERT INTO vendor (name)  VALUES('Leica'); 
+INSERT INTO vendor (name)  VALUES('Sony');
+INSERT INTO vendor (name)  VALUES('Fuji');
+
+INSERT INTO product values("ABC-989",1,1,"C1","Engineered for professionals,D5 strikes an ideal balance between resolution, sensor size, image processing and ISO range.","12 FPS continuous shooting ISO range 100-102,400 (expandable to 3,280,000)Redesigned AF system with 153 focus points 3.2",
+10.00, 300.00, 25,"ABC-989.jpg");
+
+INSERT INTO product values("ABC-979",2,2,"C2","The new flagship of Canon's's D-SLR lineup:  sensor size, image processing and ISO range
+","FX full frame format 20.8 megapixels,12 FPS continuous shooting",20.00, 50.00,35,"ABC-979.jpg");
+
+
+
